@@ -39,7 +39,7 @@ Can you find the truth before it is too late?
 
 
 ## Made with
--music from midnight persona and pixbay
+- music from midnight persona and pixbay
 - Ren'Py
 - Background art from various free sources
 - Character sprites by Sutemo
