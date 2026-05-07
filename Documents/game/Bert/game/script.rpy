@@ -1,4 +1,4 @@
-﻿# PHANTOM FILES: LAST DAY
+# PHANTOM FILES: LAST DAY
 # A Persona 5 inspired visual novel
 
 
@@ -51,6 +51,8 @@ label start:
     mc "...Unless I find the truth first."
 
     scene hallway
+
+    play music "audio/track1.mp3" fadein 1.0 loop
 
     "Aoyama Academy feels different now."
 
@@ -265,6 +267,8 @@ label confront_akira:
 label final_choice:
     scene courtyard
 
+    play music "audio/track2.mp3" fadein 1.0 loop
+
     "The expulsion hearing starts in one hour."
 
     "The sun is setting over Aoyama Academy."
@@ -313,6 +317,9 @@ label bad_ending:
     "You're not sure it was worth it."
 
     "..."
+
+    play music "audio/track3.mp3" fadein 1.0 loop
+
     "SHATTERED ENDING"
     return
 
@@ -332,7 +339,7 @@ label good_ending:
     "A long silence."
     "The sun sinks lower."
 
-    akira "...If this goes wrong—"
+    akira "...If this goes wrong"
     mc "Then we figure it out together."
     akira "..."
     akira "Okay."
@@ -350,6 +357,9 @@ label good_ending:
 
     "The Phantom Files rode again."
     "..."
+
+    stop music fadeout 2.0
+    
     "PHANTOM ENDING"
     return
 
@@ -380,5 +390,8 @@ label bittersweet_ending:
 
     "You're still not sure if that was the right call."
     "..."
+
+    play music "audio/track3.mp3" fadein 1.0 loop
+
     "HOLLOW ENDING"
     return
